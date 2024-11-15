@@ -28,3 +28,7 @@ console.log(typeof(valueNumebr));
 //true => 1; false => 0
 
 //And this is how we can covert variable from one form to another ex: Number -> String, Number -> Boolean etc.
+
+// *************************** Operation ************************************
+
+
