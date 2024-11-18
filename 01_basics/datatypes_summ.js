@@ -36,3 +36,27 @@ const myFunctions = function(){
     console.log (typeof myFunctions)
 }
 console.log(myFunctions)
+
+// ++++++++++++++++++++++++++++  Stack VS Heap  +++++++++++++++++++++++++++++++++++++
+
+// stack memory (Primitive) - get copy of original value, below the example
+
+
+let OriginalyoutubeChannel = "my1stChannel"
+let CopyyoutubeChannel = OriginalyoutubeChannel
+CopyyoutubeChannel ="my2ndChannel"
+
+console.log(OriginalyoutubeChannel) //result my1stChannel
+console.log(CopyyoutubeChannel) //result my2ndChannel
+
+// Heap memory (Non-Primitive) - reference of Original value wgich means change affect Original value
+
+let cusDeatils = {
+  name : "Mayur",
+  email : "m.india@gm.com",
+  city : "Noida"
+}
+let cusDeatils1=cusDeatils
+cusDeatils1.city = "Gwl"
+console.log(cusDeatils) // { name: 'Mayur', email: 'm.india@gm.com', city: 'Gwl' }
+console.log(cusDeatils1) // { name: 'Mayur', email: 'm.india@gm.com', city: 'Gwl' }
